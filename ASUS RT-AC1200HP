@@ -1,6 +1,10 @@
-# Firmware 
+# Firmware Integrity verification vulnerability in firmware update process of Asus RT-AC1200HP 
 
 ## Affected Product
-
+Asus RT-AC1200HP (firmware version: 3.0.0.4.380.8457)
 
 ## Overview
+During the process of firmware update, function check_imagefile() is used to check the new firmware image. However, cyclic redundancy check (CRC) is used for checking firmware image header in function check_imageheader(), which could be easily bypass and cannot defend malicious tampering against new firmware image. A tampered firmware with the same CRC value as the new firmware could be crafted to bypass the CRC verification, then, the tampered firmware which could cause arbitrary code execution and Denial of Service can be written into the IoT device through the firmware update.Therefore, there is a firmware integrity verification vulnerability in the firmware update process.
+
+ 
+ 
