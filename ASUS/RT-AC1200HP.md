@@ -1,4 +1,4 @@
-# Firmware Integrity verification vulnerability in firmware update process of Asus RT-AC1200HP 
+# Firmware Integrity Verification Vulnerability in Firmware Update Process of Asus RT-AC1200HP 
 
 ## Affected Product
 Asus RT-AC1200HP (firmware version: 3.0.0.4.380.8457)
