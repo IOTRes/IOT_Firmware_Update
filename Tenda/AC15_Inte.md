@@ -19,7 +19,6 @@ Cyclic redundancy check(CRC) is used in check_fw() which could be easily bypasse
 <img width="599" alt="image" src="https://github.com/user-attachments/assets/0f19ca8e-3108-4848-90c4-a2e89d224ab7" />
 
 
- 
-![image](https://github.com/user-attachments/assets/920cecd6-f852-4c82-9826-6bfc60d00c88)
+
 
 
