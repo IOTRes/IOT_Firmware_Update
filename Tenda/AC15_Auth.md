@@ -1,3 +1,11 @@
+# Firmware Authentication Verification Vulnerability in Firmware Update Process of Tenda AC15
+
+
+## Affected Product
+Tenda AC15 (firmware version: V15.13.07.13)
+
+## Overview
+
 During the process of firmware update, function upgrade() of program httpd calls function webCgiGetUploadFile() to obtain the new firmware image which will be uploaded to IoT device for update. 
 
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/7f616563-3b8d-4caa-9bad-75bb87957aa2" />
