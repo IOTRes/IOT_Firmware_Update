@@ -1,4 +1,10 @@
+# Firmware Authentication Verification Vulnerability in Firmware Update Process of Tenda G1
 
+
+## Affected Product
+Tenda G1 (firmware version: V16.01.7.8(3660))
+
+## Overview
 
 There is firmware authentication verification vulnerability in function check_upload_file() called by function upgrade() of program httpd during the process of firmware update. 
 
