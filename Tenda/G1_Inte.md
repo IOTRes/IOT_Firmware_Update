@@ -1,4 +1,10 @@
+# Firmware Integrity Verification Vulnerability in Firmware Update Process of Tenda G1
 
+
+## Affected Product
+Tenda G1 (firmware version: V16.01.7.8(3660))
+
+## Overview
 There is firmware integrity verification vulnerability in function check_upload_file() called by function upgrade() of program httpd during the process of firmware update. 
 
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/0a10d05f-9ebc-4bfd-ac49-951d2a542cbf" />
