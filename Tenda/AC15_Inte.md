@@ -11,13 +11,13 @@ During the process of firmware update, function upgrade() of program httpd calls
 
 
 After that, function tpi_upfile_handle() is called to verify the new firmware image. 
-<img width="468" alt="image" src="https://github.com/user-attachments/assets/81b5b2da-5f57-4065-8c4a-0e21ad83df74" />
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/81b5b2da-5f57-4065-8c4a-0e21ad83df74" /> \
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/6d5f4f1f-ad95-44f0-ab02-3959be04d252" />
 
 
  
 However, there is integrity firmware verification vulnerability in tpi_upload() called by tpi_upfile_handle().
-<img width="468" alt="image" src="https://github.com/user-attachments/assets/c16fa11b-39ad-4b6a-b1f4-74f37d883252" />
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/c16fa11b-39ad-4b6a-b1f4-74f37d883252" /> \
 <img width="427" alt="image" src="https://github.com/user-attachments/assets/8c916012-eb9e-4ed3-8645-1bb431294153" />
 
 
