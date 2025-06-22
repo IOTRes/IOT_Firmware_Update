@@ -12,13 +12,13 @@ During the process of firmware update, function upgrade() of program httpd calls
 
 
 After that, function tpi_upfile_handle() is called to verify the new firmware image. 
-<img width="468" alt="image" src="https://github.com/user-attachments/assets/74d9ef30-1e0d-4fb8-8698-d2bc6db55a73" />
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/74d9ef30-1e0d-4fb8-8698-d2bc6db55a73" /> \
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/4bf0deae-b263-4055-9dd2-dea6d8558638" />
 
 
  
 However, there is authentication firmware verification vulnerability in tpi_upload() called by tpi_upfile_handle().
-<img width="468" alt="image" src="https://github.com/user-attachments/assets/473b795e-9860-49d8-a4f8-e84216fd39d5" />
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/473b795e-9860-49d8-a4f8-e84216fd39d5" /> \
 <img width="427" alt="image" src="https://github.com/user-attachments/assets/17de2436-db56-4cab-8d01-18691f851854" />
 
  
@@ -29,14 +29,14 @@ Hard-coded authentication verification information is applied in function check_
 
 check_fw_type():
  
-<img width="396" alt="image" src="https://github.com/user-attachments/assets/b7d6108d-2780-434c-95f6-af3e5e25ff52" />
+<img width="396" alt="image" src="https://github.com/user-attachments/assets/b7d6108d-2780-434c-95f6-af3e5e25ff52" /> \
 <img width="262" alt="image" src="https://github.com/user-attachments/assets/26bcdb50-46df-4cc5-8564-1340814970ae" />
 
 
 
 split_fireware()
  
-<img width="357" alt="image" src="https://github.com/user-attachments/assets/3739e0e5-b374-4b1a-b04d-ac917ad49dcf" />
+<img width="357" alt="image" src="https://github.com/user-attachments/assets/3739e0e5-b374-4b1a-b04d-ac917ad49dcf" /> \
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/2ad50904-6d08-4761-b6bf-2318972bbb89" />
 
 
