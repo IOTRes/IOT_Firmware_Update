@@ -1,7 +1,7 @@
 # Firmware Integrity Verification Vulnerability in Firmware Update Process of Tenda CP6
 
 ## Affected Product
-Netgear R6120 (firmware version: V11.10.00.243)
+Tenda CP6 (firmware version: V11.10.00.243)
 
 ## Overview
 
