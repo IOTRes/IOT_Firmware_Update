@@ -8,6 +8,7 @@ TEW-821DAP (firmware version:v1.12B01)
 
 During the firmware update process, there is command injection vulnerability in function tools_diagnostic() of program ssi. The users first input the IP address in the web page which would performs regular expression validation and transfer the IP address to ssi through AJAX POST request. Then, in the tools_diagnostic() of program ssi, the IP address is stored in variable s and is used as a parameter of the ping command. However, the hackers could construct a malicious POST request to inject malicious command into the ping command. The POC is as the following:
 
+```
 def vuln01_ping_cmdi(self, cmd):
         print(f"[*] Vul #1: Ping command injection")
         print(f"[*] malicious: {cmd}")
@@ -31,8 +32,11 @@ def vuln01_ping_cmdi(self, cmd):
             pass
         return resp
 
+```
+
 Through the above POC, the hackers could perform command injection to execute arbitrary code or cause denial of service.
  
+<img width="416" height="96" alt="image" src="https://github.com/user-attachments/assets/9fa2beb1-0984-45ca-80c9-0cdeabdf23d1" />
 
-<img width="432" height="25" alt="image" src="https://github.com/user-attachments/assets/111f00e4-e367-43fa-b126-eb7c3ee6fdbe" />
+
 
