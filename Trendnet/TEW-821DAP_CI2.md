@@ -6,7 +6,7 @@ TEW-821DAP (firmware version:v1.12B01)
 
 ## Overview
 
-During the firmware udpate process, there is command injection vulnerability in the function tools_diagnostic of program ssi. The tools_diagnostic performs traceroute-based network diagnostic and saves the result to /tmp/diagnostic. However, in the regular expression validation of IP address, there is no validation on shell metacharacters such as ;, |, and $. Therefore, the hackers could perform malicious command injection on IP address which is stored in variable s and is used as the parameter of traceroute-based network diagnostic command. The POC is as the following:
+During the firmware udpate process, there is command injection vulnerability in the function tools_diagnostic of program ssi. The tools_diagnostic performs traceroute-based network diagnostic and saves the result to /tmp/diagnostic. The IP address is stored in variable s and is used as the parameter of traceroute-based network diagnostic command. The IP address is input by the users. The web page performs regular expression validation on the IP address and pass it to ssi through AJAX POST request. However, in the regular expression validation, there is no validation on shell metacharacters such as ;, |, and $. Therefore, the hackers could perform malicious command injection on IP address. The POC is as the following:
 
 
 ```
