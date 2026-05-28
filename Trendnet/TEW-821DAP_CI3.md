@@ -2,6 +2,6 @@
 
 
 ## Affected Product
-TEW-821DAP (firmware version:v1.12B01)
+TEW-821DAP (firmware version:v1.11B03)
 
 ## Overview
