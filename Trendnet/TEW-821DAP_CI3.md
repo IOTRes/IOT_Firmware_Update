@@ -5,4 +5,14 @@
 TEW-821DAP (firmware version:v1.11B03)
 
 ## Overview
-sub_43D21C
+
+During the firmware update process, there is command injection vulnerability in function sub_43D21C of program ssi. During the construction of DNS lookup command, variables `nslookup_target` and `dns_server` are concatenated directly to the DNS lookup command. However, these two variables are propagated from user input without any verification. Once the hackers control the user input, malicious command could be injected to the  DNS lookup command.
+
+The vulnerability trigger path is as the following: 
+
+```
+HTTP POST /goform/tools_nslookup
+  → ssi CGI dispatch table → handler @ 0x41EC14
+    → sprintf(cmd, "nslookup %s %s", nslookup_target, dns_server) @ 0x41EC30
+  → system(cmd) @ 0x41EC50
+```
