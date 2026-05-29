@@ -1,4 +1,4 @@
-# Command injection Vulnerability in Firmware Update Process of Trendnet TEW-821DAP
+# Command injection Vulnerability in Firmware Update Process of Trendnet TEW-821DAP(v1.11B03)
 
 
 ## Affected Product
