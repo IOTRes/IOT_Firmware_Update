@@ -11,7 +11,7 @@ During the firmware udpate process, there is buffer overflow vulnerability in th
 
 <img width="924" height="188" alt="image-5" src="https://github.com/user-attachments/assets/114c4770-ad0f-41e9-a9c5-5ccdd2242da4" />
 
-
+The vulnerability trigger path is as the following:
 
 ```
 
