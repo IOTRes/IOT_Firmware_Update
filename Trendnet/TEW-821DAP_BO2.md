@@ -17,16 +17,16 @@ HTTP POST /goform/tools_nslookup
   → v4 = getenv("cameo.cameo.nslookup_target") 
   → strcpy(value, v4) @ 0x41ED98
 ```
+Stack Layout:
 
-
-| 变量名         | 栈偏移             | 大小        | 溢出距离                       |
+| Variable         | Offset             | Size        | Size of buffer overflow      |
 | -------------- | ------------------ | ----------- | ------------------------------ |
-| `value`        | `[sp+0x1C]`        | **2 bytes** | 0（起点）                      |
-| `s`            | `[sp+0x1E]`        | 254 bytes   | 2 bytes 后溢入                 |
-| `command`      | `[sp+0x11C]`       | 2 bytes     | 256 bytes 后溢入               |
-| `v9`           | `[sp+0x11E]`       | 126 bytes   | 258 bytes 后溢入               |
-| `var_8`        | `[sp+0x19C]`       | 4 bytes     | 384 bytes 后溢入               |
-| 保存 `$s0`     | `[sp+0x1A4]`       | 4 bytes     | **392 bytes → 覆盖返回地址链** |
-| 保存 `$s1~$s4` | `[sp+0x1A8~0x1B4]` | 16 bytes    | 返回地址链                     |
+| `value`        | `[sp+0x1C]`        | **2 bytes** | 0                     |
+| `s`            | `[sp+0x1E]`        | 254 bytes   | 2 bytes                  |
+| `command`      | `[sp+0x11C]`       | 2 bytes     | 256 bytes                |
+| `v9`           | `[sp+0x11E]`       | 126 bytes   | 258 bytes                |
+| `var_8`        | `[sp+0x19C]`       | 4 bytes     | 384 bytes               |
+| save `$s0`     | `[sp+0x1A4]`       | 4 bytes     | **392 bytes → overwrite return address** |
+| save `$s1~$s4` | `[sp+0x1A8~0x1B4]` | 16 bytes    | return address                     |
 
 
