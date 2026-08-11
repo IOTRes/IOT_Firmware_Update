@@ -15,7 +15,7 @@ The vulnerability trigger path is as the following:
 
 ```
 
-HTTP POST /goform/tools_nslookup（任意有效请求）
+HTTP POST /goform/tools_nslookup
   → ssi CGI dispatch table → sub_41EC14 @ 0x41EC14
   → setenv("host", value, 1)
   → sprintf(command, "nslookup ${host} > %s", "/tmp/nslookup") @ 0x41ED30
